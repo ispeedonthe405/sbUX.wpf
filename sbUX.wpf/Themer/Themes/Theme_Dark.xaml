@@ -9,8 +9,8 @@
     <SolidColorBrush x:Key="WindowBrushKey" Color="#222222"/>
     <SolidColorBrush x:Key="WindowFrameBrushKey" Color="#555555"/>
     <SolidColorBrush x:Key="WindowTextBrushKey" Color="#CCCCCC"/>
-    <SolidColorBrush x:Key="GrayTextBrushKey" Color="#999999"/>
-    <SolidColorBrush x:Key="HighlightBrushKey" Color="#2222FF"/>
+    <SolidColorBrush x:Key="GrayTextBrushKey" Color="#777777"/>
+    <SolidColorBrush x:Key="HighlightBrushKey" Color="#555555"/>
     <SolidColorBrush x:Key="InactiveSelectionHighlightBrushKey" Color="#8888FF"/>
 
     <!--TabControl-->
@@ -46,7 +46,7 @@
     <SolidColorBrush x:Key="ComboBox.MouseOver.Glyph" Color="#FF000000"/>
     <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Background" Color="#222222FF"/>
     <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Border" Color="#FF7EB4EA"/>
-    <SolidColorBrush x:Key="ComboBox.Pressed.Border" Color="#FF569DE5"/>
+    <SolidColorBrush x:Key="ComboBox.Pressed.Border" Color="#555555"/>
     <SolidColorBrush x:Key="ComboBox.Pressed.Glyph" Color="#FF000000"/>
     <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Background" Color="#222222FF"/>
     <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Border" Color="#FF569DE5"/>
@@ -94,9 +94,9 @@
 
     <!--ListViewItem-->
     <SolidColorBrush x:Key="ListViewItem.MouseOver.Background" Color="#1F26A0DA"/>
-    <SolidColorBrush x:Key="ListViewItem.MouseOver.Border" Color="#a826A0Da"/>
+    <SolidColorBrush x:Key="ListViewItem.MouseOver.Border" Color="#555555"/>
     <SolidColorBrush x:Key="ListViewItem.SelectedActive.Background" Color="#3D26A0DA"/>
-    <SolidColorBrush x:Key="ListViewItem.SelectedActive.Border" Color="#FF26A0DA"/>
+    <SolidColorBrush x:Key="ListViewItem.SelectedActive.Border" Color="#555555"/>
     <SolidColorBrush x:Key="ListViewItem.SelectedInactive.Background" Color="#3DDADADA"/>
     <SolidColorBrush x:Key="ListViewItem.SelectedInactive.Border" Color="#FFDADADA"/>
 
@@ -110,7 +110,7 @@
     <SolidColorBrush x:Key="ListBoxItem.MouseOver.Background" Color="#1F26A0DA"/>
     <SolidColorBrush x:Key="ListBoxItem.MouseOver.Border" Color="#a826A0Da"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedActive.Background" Color="#3D26A0DA"/>
-    <SolidColorBrush x:Key="ListBoxItem.SelectedActive.Border" Color="#FF26A0DA"/>
+    <SolidColorBrush x:Key="ListBoxItem.SelectedActive.Border" Color="#555555"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedInactive.Background" Color="#3DDADADA"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedInactive.Border" Color="#FFDADADA"/>
 
