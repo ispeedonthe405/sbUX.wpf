@@ -235,6 +235,7 @@ namespace sbux.wpf.Themer
             BuildTheme("Green", "Green Theme", Theme.eSymbolColor.cC0C0C0, "Theme_Green.xaml");
             BuildTheme("Blue Steel", "Blue Steel Theme", Theme.eSymbolColor.cC0C0C0, "Theme_BlueSteel.xaml");
             BuildTheme("Pale Blue", "Pale Blue", Theme.eSymbolColor.c434343, "Theme_PaleBlue.xaml");
+            BuildTheme("Light Pastel", "Light Pastel", Theme.eSymbolColor.c242424, "Theme_LightPastel.xaml");
 
 
             //_ActiveTheme = Themes.Last();

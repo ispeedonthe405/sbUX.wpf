@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
         xmlns:themer="clr-namespace:sbux.wpf.Themer;assembly=Themer"
+        xmlns:vm="clr-namespace:sbux.wpf.ViewManager;assembly=ViewManager"
         mc:Ignorable="d"
         Title="sbux.wpf Test App" Height="450" Width="800"
         Background="{DynamicResource BackgroundNormalBrushKey}">
@@ -43,7 +44,7 @@
                     <TextBlock VerticalAlignment="Center" Text="Buttons:"/>
                 </ToolBar.Header>
                 <Button Content="Enabled"/>
-                <Button Content="Disabled"/>
+                <Button Content="Disabled" IsEnabled="False"/>
                 <ToggleButton Content="Toggle"/>
                 <RadioButton Content="Radio"/>
                 <CheckBox Content="Check"/>
@@ -119,6 +120,12 @@
                 <TreeViewItem Header="Item 3.3"/>
             </TreeViewItem>
         </TreeView>
+
+            <StackPanel Grid.Row="2" Orientation="Vertical" Width="100">
+                <Button Content="Button Normal" Margin="0,5,0,5"/>
+                <Button Content="Button Disabled" IsEnabled="False" Margin="0,5,0,5"/>
+                <ToggleButton Content="ToggleButton" Margin="0,5,0,5"/>
+            </StackPanel>
 
         </Grid>
         
