@@ -108,7 +108,6 @@
             <Trigger Property="IsHighlighted" Value="True">
                 <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderMouseOverBrushKey}"/>
-                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundMouseOverBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
@@ -168,7 +167,6 @@
             <Trigger Property="IsHighlighted" Value="True">
                 <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderNormalBrushKey}"/>
-                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegoundMouseOverBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
@@ -211,7 +209,6 @@
             <Trigger Property="IsHighlighted" Value="True">
                 <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderNormalBrushKey}"/>
-                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegoundMouseOverBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
@@ -248,7 +245,7 @@
                 <TextBlock Grid.Column="4" Margin="{TemplateBinding Padding}" Opacity="0.7" Text="{TemplateBinding InputGestureText}" VerticalAlignment="Center"/>
                 <Path x:Name="RightArrow" Grid.Column="5" Data="{StaticResource RightArrow}" Fill="{DynamicResource ForegroundNormalBrushKey}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
                 <Popup x:Name="PART_Popup" AllowsTransparency="true" Focusable="false" HorizontalOffset="-2" IsOpen="{Binding IsSubmenuOpen, RelativeSource={RelativeSource TemplatedParent}}" Placement="Right" PopupAnimation="{DynamicResource {x:Static SystemParameters.MenuPopupAnimationKey}}" VerticalOffset="-3">
-                    <Border x:Name="SubMenuBorder" Background="{StaticResource ControlNormalBrushKey}" BorderBrush="{StaticResource BorderNormalBrushKey}" BorderThickness="1" Padding="2">
+                    <Border x:Name="SubMenuBorder" Background="{DynamicResource ControlNormalBrushKey}" BorderBrush="{DynamicResource BorderNormalBrushKey}" BorderThickness="1" Padding="2">
                         <ScrollViewer x:Name="SubMenuScrollViewer" Style="{DynamicResource {ComponentResourceKey ResourceId=MenuScrollViewer, TypeInTargetAssembly={x:Type FrameworkElement}}}">
                             <Grid RenderOptions.ClearTypeHint="Enabled">
                                 <Canvas HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
@@ -274,9 +271,8 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="Transparent"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource HighlightNormalBrushKey}"/>
                 <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource BorderNormalBrushKey}"/>
-                <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegoundMouseOverBrushKey}"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
