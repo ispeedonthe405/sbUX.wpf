@@ -244,6 +244,7 @@ namespace sbux.wpf.Themer
             BuildTemplate("Button.xaml");
             BuildTemplate("CheckBox.xaml");
             BuildTemplate("ComboBox.xaml");
+            BuildTemplate("ContextMenu.xaml");
             BuildTemplate("DataGrid.xaml");
             BuildTemplate("GridSplitter.xaml");
             BuildTemplate("Label.xaml");
