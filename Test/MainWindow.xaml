@@ -82,44 +82,70 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-        <DataGrid x:Name="datagrid" Grid.Row="0" Grid.Column="0" AutoGenerateColumns="True" ItemsSource="{Binding}"/>
+            <DataGrid x:Name="datagrid" Grid.Row="0" Grid.Column="0" AutoGenerateColumns="True" ItemsSource="{Binding}">
+                <DataGrid.Resources>
+                    <ContextMenu x:Key="cm_Zero">
+                        <ContextMenu.Items>
+                            <MenuItem Header="Item 0"/>
+                            <Separator/>
+                            <MenuItem Header="Item 1">
+                                <MenuItem Header="Subitem 0"/>
+                                <MenuItem Header="Subitem 1"/>
+                                <MenuItem Header="Subitem 2"/>
+                            </MenuItem>
+                            <MenuItem Header="Item 2">
+                                <MenuItem Header="1"/>
+                                <MenuItem Header="2"/>
+                                <MenuItem Header="3"/>
+                                <MenuItem Header="4"/>
+                                <MenuItem Header="5"/>
+                                <MenuItem Header="6"/>
+                                <MenuItem Header="7"/>
+                            </MenuItem>
+                        </ContextMenu.Items>
+                    </ContextMenu>
+                    <Style TargetType="DataGridRow" BasedOn="{StaticResource {x:Type DataGridRow}}">
+                        <Setter Property="ContextMenu" Value="{StaticResource cm_Zero}"/>
+                    </Style>
+                </DataGrid.Resources>
+            </DataGrid>
 
-        <ListView x:Name="listview" Grid.Row="0" Grid.Column="1">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Column 1" DisplayMemberBinding="{Binding Path=Guid0}"/>
-                    <GridViewColumn Header="Column 2" DisplayMemberBinding="{Binding Path=Guid1}"/>
-                    <GridViewColumn Header="Column 2" DisplayMemberBinding="{Binding Path=Guid2}"/>
+            <ListView x:Name="listview" Grid.Row="0" Grid.Column="1">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Column 1" DisplayMemberBinding="{Binding Path=Guid0}"/>
+                        <GridViewColumn Header="Column 2" DisplayMemberBinding="{Binding Path=Guid1}"/>
+                        <GridViewColumn Header="Column 2" DisplayMemberBinding="{Binding Path=Guid2}"/>
                     </GridView>
-            </ListView.View>
-        </ListView>
+                </ListView.View>
+            </ListView>
 
 
-        <ListBox x:Name="listbox" Grid.Row="1" Grid.Column="0">
-            <ListBoxItem>Item 1</ListBoxItem>
-            <ListBoxItem>Item 2</ListBoxItem>
-            <ListBoxItem>Item 3</ListBoxItem>
-            <ListBoxItem>Item 4</ListBoxItem>
-            <ListBoxItem>Item 5</ListBoxItem>
-        </ListBox>
+            <ListBox x:Name="listbox" Grid.Row="1" Grid.Column="0">
+                <ListBoxItem>Item 1</ListBoxItem>
+                <ListBoxItem>Item 2</ListBoxItem>
+                <ListBoxItem>Item 3</ListBoxItem>
+                <ListBoxItem>Item 4</ListBoxItem>
+                <ListBoxItem>Item 5</ListBoxItem>
+            </ListBox>
 
-        <TreeView x:Name="treeview" Grid.Row="1" Grid.Column="1">
-            <TreeViewItem Header="Item 1">
-                <TreeViewItem Header="Item 1.1"/>
-                <TreeViewItem Header="Item 1.2"/>
-                <TreeViewItem Header="Item 1.3"/>
-            </TreeViewItem>
-            <TreeViewItem Header="Item 2">
-                <TreeViewItem Header="Item 2.1"/>
-                <TreeViewItem Header="Item 2.2"/>
-                <TreeViewItem Header="Item 2.3"/>
-            </TreeViewItem>
-            <TreeViewItem Header="Item 3">
-                <TreeViewItem Header="Item 3.1"/>
-                <TreeViewItem Header="Item 3.2"/>
-                <TreeViewItem Header="Item 3.3"/>
-            </TreeViewItem>
-        </TreeView>
+            <TreeView x:Name="treeview" Grid.Row="1" Grid.Column="1">
+                <TreeViewItem Header="Item 1">
+                    <TreeViewItem Header="Item 1.1"/>
+                    <TreeViewItem Header="Item 1.2"/>
+                    <TreeViewItem Header="Item 1.3"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Item 2">
+                    <TreeViewItem Header="Item 2.1"/>
+                    <TreeViewItem Header="Item 2.2"/>
+                    <TreeViewItem Header="Item 2.3"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Item 3">
+                    <TreeViewItem Header="Item 3.1"/>
+                    <TreeViewItem Header="Item 3.2"/>
+                    <TreeViewItem Header="Item 3.3"/>
+                </TreeViewItem>
+            </TreeView>
 
             <StackPanel Grid.Row="2" Orientation="Vertical" Width="100">
                 <Button Content="Button Normal" Margin="0,5,0,5"/>
