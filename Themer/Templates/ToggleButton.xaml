@@ -24,7 +24,8 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
-                    <Border x:Name="border" Background="{TemplateBinding Background}" 
+                    <Border x:Name="border" 
+                            Background="{TemplateBinding Background}" 
                             BorderBrush="{TemplateBinding BorderBrush}" 
                             BorderThickness="{TemplateBinding BorderThickness}" 
                             SnapsToDevicePixels="true">
@@ -51,12 +52,19 @@
                             <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlPressedBrushKey}"/>
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderPressedBrushKey}"/>
                         </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsChecked" Value="True"/>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlMouseOverBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderMouseOverBrushKey}"/>
+                        </MultiTrigger>
                         <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Opacity" TargetName="border" Value="0.5"/>
                             <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlDisabledBrushKey}"/>
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderDisabledBrushKey}"/>
-                            <Setter Property="Opacity" TargetName="border" Value="0.5"/>
-                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" 
-                                    Value="{DynamicResource ForegroundDisabledBrushKey}"/>
+                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

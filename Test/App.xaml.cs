@@ -16,10 +16,10 @@ namespace Test
 
             ThemeManager.SetApplication(this);
 
-            //FrameworkElement.StyleProperty.OverrideMetadata(typeof(Window), new FrameworkPropertyMetadata
-            //{
-            //    DefaultValue = FindResource(typeof(Window))
-            //});
+            FrameworkElement.StyleProperty.OverrideMetadata(typeof(Window), new FrameworkPropertyMetadata
+            {
+                DefaultValue = FindResource(typeof(Window))
+            });
         }
     }
 

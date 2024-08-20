@@ -46,7 +46,7 @@
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Opacity" Value="0.5"/>
                             <Setter Property="Background" TargetName="border" Value="{DynamicResource ControlDisabledBrushKey}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource ControlNormalBrushKey}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource BorderDisabledBrushKey}"/>
                             <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{DynamicResource ForegroundDisabledBrushKey}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>

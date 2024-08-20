@@ -11,4 +11,8 @@
     <ProjectReference Include="..\Themer\Themer.csproj" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy $(TargetPath) c:\code\libs&#xD;&#xA;" />
+  </Target>
+
 </Project>

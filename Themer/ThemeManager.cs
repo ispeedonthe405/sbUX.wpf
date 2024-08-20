@@ -234,11 +234,9 @@ namespace sbux.wpf.Themer
             BuildTheme("Dark", "Dark Theme", Theme.eSymbolColor.cC0C0C0, "Theme_Dark.xaml");
             BuildTheme("Green", "Green Theme", Theme.eSymbolColor.cC0C0C0, "Theme_Green.xaml");
             BuildTheme("Blue Steel", "Blue Steel Theme", Theme.eSymbolColor.cC0C0C0, "Theme_BlueSteel.xaml");
-            BuildTheme("Pale Blue", "Pale Blue", Theme.eSymbolColor.c434343, "Theme_PaleBlue.xaml");
-            BuildTheme("Light Pastel", "Light Pastel", Theme.eSymbolColor.c242424, "Theme_LightPastel.xaml");
-
-
-            //_ActiveTheme = Themes.Last();
+            //BuildTheme("Blue White", "Blue White Theme", Theme.eSymbolColor.cC0C0C0, "Theme_BlueWhite.xaml");
+            //BuildTheme("Blue Gray", "Blue Gray", Theme.eSymbolColor.c434343, "Theme_BlueGray.xaml");
+            //BuildTheme("Light Pastel", "Light Pastel", Theme.eSymbolColor.c242424, "Theme_LightPastel.xaml");
 
             BuildTemplate("Border.xaml");
             BuildTemplate("Button.xaml");
@@ -259,12 +257,12 @@ namespace sbux.wpf.Themer
             BuildTemplate("TabControl.xaml");
             BuildTemplate("TextBlock.xaml");
             BuildTemplate("TextBox.xaml");
-            //BuildTemplate("Thumb.xaml");
             BuildTemplate("ToggleButton.xaml");
-            BuildTemplate("Toolbar.xaml");
             BuildTemplate("ToolTip.xaml");
             BuildTemplate("TreeView.xaml");
-            //BuildTemplate("Window.xaml");
+
+            // Breaking the alphabetical pattern here because the toolbar template is partially based on other templates
+            //BuildTemplate("Toolbar.xaml");
 
             LoadTemplates();
         }

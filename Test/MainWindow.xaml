@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
         xmlns:themer="clr-namespace:sbux.wpf.Themer;assembly=Themer"
-        xmlns:vm="clr-namespace:sbux.wpf.ViewManager;assembly=ViewManager"
         mc:Ignorable="d"
         Title="sbux.wpf Test App" Height="450" Width="800"
         Background="{DynamicResource BackgroundNormalBrushKey}">
@@ -38,11 +37,8 @@
             </MenuItem>
         </Menu>
 
-        <ToolBarTray Grid.Row="1">
+        <ToolBarTray Grid.Row="1" VerticalAlignment="Center">
             <ToolBar VerticalAlignment="Center" VerticalContentAlignment="Center">
-                <ToolBar.Header>
-                    <TextBlock VerticalAlignment="Center" Text="Buttons:"/>
-                </ToolBar.Header>
                 <Button Content="Enabled"/>
                 <Button Content="Disabled" IsEnabled="False"/>
                 <ToggleButton Content="Toggle"/>
@@ -50,16 +46,9 @@
                 <CheckBox Content="Check"/>
             </ToolBar>
             <ToolBar VerticalAlignment="Center" VerticalContentAlignment="Center">
-                <ToolBar.Header>
-                    <TextBlock VerticalAlignment="Center" Text="ComboBox:"/>
-                </ToolBar.Header>
-                <ComboBox x:Name="cb_Theme" Width="100" SelectionChanged="cb_Theme_SelectionChanged" DisplayMemberPath="DisplayName">
-                </ComboBox>
+                <ComboBox x:Name="cb_Theme" Width="100" SelectionChanged="cb_Theme_SelectionChanged" DisplayMemberPath="DisplayName"/>
             </ToolBar>
             <ToolBar VerticalAlignment="Center" VerticalContentAlignment="Center">
-                <ToolBar.Header>
-                    <TextBlock VerticalAlignment="Center" Text="TextBox:"/>
-                </ToolBar.Header>
                 <TextBox Width="100"/>
             </ToolBar>
         </ToolBarTray>
@@ -74,7 +63,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="100"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -147,12 +136,54 @@
                 </TreeViewItem>
             </TreeView>
 
-            <StackPanel Grid.Row="2" Orientation="Vertical" Width="100">
-                <Button Content="Button Normal" Margin="0,5,0,5"/>
-                <Button Content="Button Disabled" IsEnabled="False" Margin="0,5,0,5"/>
-                <ToggleButton Content="ToggleButton" Margin="0,5,0,5"/>
+            <StackPanel Grid.Row="2" Orientation="Vertical" Height="Auto">
+                <StackPanel Orientation="Horizontal" Height="24" Margin="5" VerticalAlignment="Center">
+                    <Button Content="Button Normal" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                    <Button Content="Button Disabled" IsEnabled="False" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                    <ToggleButton Content="ToggleButton" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                    <CheckBox Content="CheckBox" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel x:Name="radiopanel" Orientation="Horizontal" Height="24" Margin="5" VerticalAlignment="Center">
+                    <RadioButton x:Name="Radio0" Content="Radio0" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
+                    <RadioButton x:Name="Radio1" Content="Radio1" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
+                    <RadioButton x:Name="Radio2" Content="Radio2" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
+                    <RadioButton x:Name="Radio3" Content="Radio3" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="24" Margin="5" VerticalAlignment="Center">
+                    <ComboBox Width="100" Margin="5,0,5,0" VerticalAlignment="Center">
+                        <ComboBoxItem Content="Item 0"/>
+                        <ComboBoxItem Content="Item 1"/>
+                        <ComboBoxItem Content="Item 2"/>
+                        <ComboBox.SelectedIndex>0</ComboBox.SelectedIndex>
+                    </ComboBox>
+                    <TextBox Width="100" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                </StackPanel>
             </StackPanel>
 
+            <TextBox Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" AcceptsReturn="True"
+                     ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                     Text="
+                    This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text.This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text.This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text.
+                    \r\n
+                    This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text.This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text.This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text.
+                    \r\n
+                    This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text.This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text.This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
+                    This is a TextBox with a great deal of text.
+                    "/>
         </Grid>
         
     </Grid>

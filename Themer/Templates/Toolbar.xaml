@@ -138,12 +138,12 @@
 
     <Style x:Key="{x:Static ToolBar.ButtonStyleKey}" BasedOn="{StaticResource ToolBarButtonBaseStyle}" TargetType="{x:Type Button}">
         <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ControlNormalBrushKey}" />
         <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
     </Style>
     <Style x:Key="{x:Static ToolBar.ToggleButtonStyleKey}" BasedOn="{StaticResource {x:Type ToggleButton}}" TargetType="{x:Type ToggleButton}">
         <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ControlNormalBrushKey}" />
         <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
     </Style>
     <Style x:Key="{x:Static ToolBar.CheckBoxStyleKey}" BasedOn="{StaticResource {x:Type CheckBox}}" TargetType="{x:Type CheckBox}">
@@ -153,21 +153,18 @@
     </Style>
     <Style x:Key="{x:Static ToolBar.RadioButtonStyleKey}" BasedOn="{StaticResource {x:Type RadioButton}}" TargetType="{x:Type RadioButton}">
         <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ControlNormalBrushKey}" />
         <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
     </Style>
     <Style x:Key="{x:Static ToolBar.TextBoxStyleKey}"  BasedOn="{StaticResource {x:Type TextBox}}" TargetType="{x:Type TextBox}">
-        <Setter Property="Background" Value="{DynamicResource BackgroundNormalBrushKey}" />
+        <Setter Property="Background" Value="{DynamicResource ControlNormalBrushKey}" />
         <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
         <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
     </Style>
-    <Style x:Key="{x:Static ToolBar.ComboBoxStyleKey}" BasedOn="{StaticResource {x:Type ComboBox}}" TargetType="{x:Type ComboBox}">
-        <Setter Property="Background" Value="{DynamicResource BackgroundNormalBrushKey}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderNormalBrushKey}" />
-        <Setter Property="Foreground" Value="{DynamicResource ForegroundNormalBrushKey}" />
-    </Style>
+    <!--<Style x:Key="{x:Static ToolBar.ComboBoxStyleKey}" BasedOn="{StaticResource {x:Type ComboBox}}" TargetType="{x:Type ComboBox}"/>-->
 
-    
+
+
 
 
     <Style x:Key="ToolBarThumbStyle" TargetType="{x:Type Thumb}">
@@ -186,7 +183,7 @@
                                               TileMode="Tile">
                                     <DrawingBrush.Drawing>
                                         <DrawingGroup>
-                                            <GeometryDrawing Brush="#AAA" Geometry="M 4 4 L 4 8 L 8 8 L 8 4 z" />
+                                            <GeometryDrawing Brush="{DynamicResource ForegroundNormalBrushKey}" Geometry="M 4 4 L 4 8 L 8 8 L 8 4 z" />
                                         </DrawingGroup>
                                     </DrawingBrush.Drawing>
                                 </DrawingBrush>
@@ -209,7 +206,7 @@
                             SnapsToDevicePixels="true">
                         <Border.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#00000000" Offset="0" />
+                                <GradientStop Color="{DynamicResource ControlNormal}" Offset="0" />
                                 <GradientStop Offset="1" />
                             </LinearGradientBrush>
                         </Border.Background>
@@ -277,29 +274,15 @@
                     <Border x:Name="Border"
                             CornerRadius="2"
                             BorderThickness="1">
+
                         <Border.BorderBrush>
                             <SolidColorBrush Color="{DynamicResource ControlNormal}" />
-                            <!--<LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                <LinearGradientBrush.GradientStops>
-                                    <GradientStopCollection>
-                                        <GradientStop Color="{DynamicResource BorderLight}" Offset="0.0" />
-                                        <GradientStop Color="{DynamicResource BorderDark}" Offset="1.0" />
-                                    </GradientStopCollection>
-                                </LinearGradientBrush.GradientStops>
-                            </LinearGradientBrush>-->
                         </Border.BorderBrush>
 
                         <Border.Background>
                             <SolidColorBrush Color="{DynamicResource ControlNormal}" />
-                            <!--<LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                <LinearGradientBrush.GradientStops>
-                                    <GradientStopCollection>
-                                        <GradientStop Color="#FFF" Offset="0.0" />
-                                        <GradientStop Color="{DynamicResource ControlNormal}" Offset="1.0" />
-                                    </GradientStopCollection>
-                                </LinearGradientBrush.GradientStops>
-                            </LinearGradientBrush>-->
                         </Border.Background>
+
                         <DockPanel>
                             <ToggleButton DockPanel.Dock="Right"
                                           IsEnabled="{TemplateBinding HasOverflowItems}"

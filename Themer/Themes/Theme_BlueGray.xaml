@@ -35,7 +35,7 @@
     <SolidColorBrush x:Key="BackgroundMediumBrushKey" Color="{DynamicResource BackgroundMedium}"/>
     <SolidColorBrush x:Key="BackgroundDarkBrushKey" Color="{DynamicResource BackgroundDark}"/>
 
-    <Color x:Key="ForegroundNormal">#000000</Color>
+    <Color x:Key="ForegroundNormal">#242424</Color>
     <Color x:Key="ForegroundSelected">#F1F2F4</Color>
     <Color x:Key="ForegroundInactive">#000000</Color>
     <Color x:Key="ForegroundDisabled">#000000</Color>

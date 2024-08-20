@@ -9,7 +9,7 @@ namespace sbux.wpf.Themer
     /// <summary>
     /// Use instead of System.Windows.Controls.Image to automatically update the image source when the theme changes.
     /// </summary>
-    public class DynamicImage : Image, INotifyPropertyChanged
+    public class ThemeSymbol : Image, INotifyPropertyChanged
     {
         ///////////////////////////////////////////////////////////
         #region INotifyPropertyChanged
@@ -53,13 +53,13 @@ namespace sbux.wpf.Themer
             DependencyProperty.Register(
                 "SymbolName", 
                 typeof(string), 
-                typeof(DynamicImage),
+                typeof(ThemeSymbol),
                 new PropertyMetadata("add", OnSymbolNameChanged),
                 SymbolNameValidationCallback);
 
         private static void OnSymbolNameChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            if(d is DynamicImage dynamicImage)
+            if(d is ThemeSymbol dynamicImage)
             {
                 dynamicImage.ApplySourceToSymbol();
             }
@@ -94,7 +94,7 @@ namespace sbux.wpf.Themer
             }
         }
 
-        public DynamicImage() : base()
+        public ThemeSymbol() : base()
         {
             ThemeManager.ThemeChanged += (sender, e) => ApplySourceToSymbol();
             ApplySourceToSymbol();
