@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
-        xmlns:themer="clr-namespace:sbux.wpf.Themer;assembly=Themer"
+        xmlns:themer="clr-namespace:sbux.wpf.Themer;assembly=sbux.wpf.Themer"
         mc:Ignorable="d"
         Title="sbux.wpf Test App" Height="450" Width="800"
         Background="{DynamicResource BackgroundNormalBrushKey}">
@@ -12,6 +12,7 @@
     <Grid>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
             <RowDefinition Height="24"/>
             <RowDefinition Height="24"/>
             <RowDefinition Height="*"/>
@@ -53,13 +54,23 @@
             </ToolBar>
         </ToolBarTray>
 
-        <StatusBar Grid.Row="3">
-            <StatusBarItem>
-                <TextBlock Text="Status Item"/>
-            </StatusBarItem>
-        </StatusBar>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <StackPanel.Resources>
+                <Style TargetType="themer:ThemeSymbol">
+                    <Setter Property="Width" Value="18"/>
+                    <Setter Property="Height" Value="18"/>
+                </Style>
+            </StackPanel.Resources>
+            <themer:ThemeSymbol SymbolName="folder"/>
+            <themer:ThemeSymbol SymbolName="add"/>
+            <themer:ThemeSymbol SymbolName="contact"/>
+            <themer:ThemeSymbol SymbolName="email"/>
+            <themer:ThemeSymbol SymbolName="explore"/>
+            <themer:ThemeSymbol SymbolName="find"/>
+            <themer:ThemeSymbol SymbolName="delete"/>
+        </StackPanel>
 
-        <Grid Grid.Row="2">
+        <Grid Grid.Row="3">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -185,6 +196,12 @@
                     This is a TextBox with a great deal of text.
                     "/>
         </Grid>
+
+        <StatusBar Grid.Row="4">
+            <StatusBarItem>
+                <TextBlock Text="Status Item"/>
+            </StatusBarItem>
+        </StatusBar>
         
     </Grid>
     
