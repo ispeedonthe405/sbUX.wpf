@@ -5,9 +5,9 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{D06A03AC-8D34-469F-937D-232B84AEA60C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Themer", "Themer\Themer.csproj", "{F7F7182A-7546-4F41-8795-A320D24EF4AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sbux.wpf.Themer", "Themer\sbux.wpf.Themer.csproj", "{F7F7182A-7546-4F41-8795-A320D24EF4AF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewManager", "ViewManager\ViewManager.csproj", "{4B9B1025-C61A-467F-95E8-5CD60613CA55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sbux.wpf.ViewManager", "ViewManager\sbux.wpf.ViewManager.csproj", "{4B9B1025-C61A-467F-95E8-5CD60613CA55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

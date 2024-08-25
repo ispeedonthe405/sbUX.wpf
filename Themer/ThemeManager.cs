@@ -211,7 +211,7 @@ namespace sbux.wpf.Themer
 
         private static void BuildTheme(string name, string description, Theme.eSymbolColor symbolColor, string filename)
         {
-            string uri = $"/Themer;component/Themes/{filename}";
+            string uri = $"/sbux.wpf.Themer;component/Themes/{filename}";
             Themes.Add(new Theme(
                 name,
                 description,
@@ -221,7 +221,7 @@ namespace sbux.wpf.Themer
 
         private static void BuildTemplate(string filename)
         {
-            string uri = $"/Themer;component/Templates/{filename}";
+            string uri = $"/sbux.wpf.Themer;component/Templates/{filename}";
             Templates.Add(new ResourceDictionary() { Source = new Uri(uri, UriKind.RelativeOrAbsolute) });
         }
 
