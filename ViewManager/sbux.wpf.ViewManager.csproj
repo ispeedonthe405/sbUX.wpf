@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Themer\Themer.csproj" />
+    <ProjectReference Include="..\Themer\sbux.wpf.Themer.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy $(TargetPath) c:\code\libs&#xD;&#xA;" />
+    <Exec Command="copy $(TargetPath) d:\code\libs&#xD;&#xA;&#xD;&#xA;" />
   </Target>
 
 </Project>
