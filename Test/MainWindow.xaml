@@ -5,173 +5,197 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
         xmlns:themer="clr-namespace:sbux.wpf.Themer;assembly=sbux.wpf.Themer"
+        xmlns:ctls="clr-namespace:sbux.wpf.Controls;assembly=sbux.wpf.Controls"
         mc:Ignorable="d"
         Title="sbux.wpf Test App" Height="450" Width="800"
         Background="{DynamicResource BackgroundNormalBrushKey}">
-    
-    <Grid>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="24"/>
-            <RowDefinition Height="24"/>
-            <RowDefinition Height="24"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="24"/>
-        </Grid.RowDefinitions>
+    <TabControl x:Name="MainTabs" TabStripPlacement="Top">
 
-        <Menu Grid.Row="0">
-            <MenuItem Header="_File">
-                <MenuItem Header="_New"/>
-                <MenuItem Header="_Open"/>
-                <MenuItem Header="_Save"/>
-                <MenuItem Header="_Exit"/>
-            </MenuItem>
-            <MenuItem Header="Disabled" IsEnabled="False">
-            </MenuItem>
-            <MenuItem Header="Partially disabled">
-                <MenuItem Header="Item 1" IsEnabled="False"/>
-                <MenuItem Header="Item 2" IsEnabled="False"/>
-                <MenuItem Header="Item 3"/>
-                <MenuItem Header="Item 4"/>
-                <MenuItem Header="Item 5"/>
-                <MenuItem Header="Item 6" IsEnabled="False"/>
-            </MenuItem>
-        </Menu>
+        <TabItem Header="sbux.wpf.Controls">
 
-        <ToolBarTray Grid.Row="1" VerticalAlignment="Center">
-            <ToolBar VerticalAlignment="Center" VerticalContentAlignment="Center">
-                <Button Content="Enabled"/>
-                <Button Content="Disabled" IsEnabled="False"/>
-                <ToggleButton Content="Toggle"/>
-                <RadioButton Content="Radio"/>
-                <CheckBox Content="Check"/>
-            </ToolBar>
-            <ToolBar VerticalAlignment="Center" VerticalContentAlignment="Center">
-                <ComboBox x:Name="cb_Theme" Width="100" SelectionChanged="cb_Theme_SelectionChanged" DisplayMemberPath="DisplayName"/>
-            </ToolBar>
-            <ToolBar VerticalAlignment="Center" VerticalContentAlignment="Center">
-                <TextBox Width="100"/>
-            </ToolBar>
-        </ToolBarTray>
+            <Grid>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Row="2" Orientation="Horizontal">
-            <StackPanel.Resources>
-                <Style TargetType="themer:ThemeSymbol">
-                    <Setter Property="Width" Value="18"/>
-                    <Setter Property="Height" Value="18"/>
-                </Style>
-            </StackPanel.Resources>
-            <themer:ThemeSymbol SymbolName="folder"/>
-            <themer:ThemeSymbol SymbolName="add"/>
-            <themer:ThemeSymbol SymbolName="contact"/>
-            <themer:ThemeSymbol SymbolName="email"/>
-            <themer:ThemeSymbol SymbolName="explore"/>
-            <themer:ThemeSymbol SymbolName="find"/>
-            <themer:ThemeSymbol SymbolName="delete"/>
-        </StackPanel>
+                <ctls:ColorPicker Grid.Row="0" Grid.Column="0" Text="Selected Color:"/>
 
-        <Grid Grid.Row="3">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition Height="100"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+            </Grid>
+            
+        </TabItem>
+        
+        <TabItem Header="sbux.wpf.Themer">
+            <Grid>
 
-            <DataGrid x:Name="datagrid" Grid.Row="0" Grid.Column="0" AutoGenerateColumns="True" ItemsSource="{Binding}">
-                <DataGrid.Resources>
-                    <ContextMenu x:Key="cm_Zero">
-                        <ContextMenu.Items>
-                            <MenuItem Header="Item 0"/>
-                            <Separator/>
-                            <MenuItem Header="Item 1">
-                                <MenuItem Header="Subitem 0"/>
-                                <MenuItem Header="Subitem 1"/>
-                                <MenuItem Header="Subitem 2"/>
-                            </MenuItem>
-                            <MenuItem Header="Item 2">
-                                <MenuItem Header="1"/>
-                                <MenuItem Header="2"/>
-                                <MenuItem Header="3"/>
-                                <MenuItem Header="4"/>
-                                <MenuItem Header="5"/>
-                                <MenuItem Header="6"/>
-                                <MenuItem Header="7"/>
-                            </MenuItem>
-                        </ContextMenu.Items>
-                    </ContextMenu>
-                    <Style TargetType="DataGridRow" BasedOn="{StaticResource {x:Type DataGridRow}}">
-                        <Setter Property="ContextMenu" Value="{StaticResource cm_Zero}"/>
-                    </Style>
-                </DataGrid.Resources>
-            </DataGrid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="24"/>
+                    <RowDefinition Height="24"/>
+                    <RowDefinition Height="24"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="24"/>
+                </Grid.RowDefinitions>
 
-            <ListView x:Name="listview" Grid.Row="0" Grid.Column="1">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn Header="Column 1" DisplayMemberBinding="{Binding Path=Guid0}"/>
-                        <GridViewColumn Header="Column 2" DisplayMemberBinding="{Binding Path=Guid1}"/>
-                        <GridViewColumn Header="Column 2" DisplayMemberBinding="{Binding Path=Guid2}"/>
-                    </GridView>
-                </ListView.View>
-            </ListView>
+                <Menu Grid.Row="0">
+                    <MenuItem Header="_File">
+                        <MenuItem Header="_New"/>
+                        <MenuItem Header="_Open"/>
+                        <MenuItem Header="_Save"/>
+                        <MenuItem Header="_Exit"/>
+                    </MenuItem>
+                    <MenuItem Header="Disabled" IsEnabled="False">
+                    </MenuItem>
+                    <MenuItem Header="Partially disabled">
+                        <MenuItem Header="Item 1" IsEnabled="False"/>
+                        <MenuItem Header="Item 2" IsEnabled="False"/>
+                        <MenuItem Header="Item 3"/>
+                        <MenuItem Header="Item 4"/>
+                        <MenuItem Header="Item 5"/>
+                        <MenuItem Header="Item 6" IsEnabled="False"/>
+                    </MenuItem>
+                </Menu>
 
+                <ToolBarTray Grid.Row="1" VerticalAlignment="Center">
+                    <ToolBar VerticalAlignment="Center" VerticalContentAlignment="Center">
+                        <Button Content="Enabled"/>
+                        <Button Content="Disabled" IsEnabled="False"/>
+                        <ToggleButton Content="Toggle"/>
+                        <RadioButton Content="Radio"/>
+                        <CheckBox Content="Check"/>
+                    </ToolBar>
+                    <ToolBar VerticalAlignment="Center" VerticalContentAlignment="Center">
+                        <ComboBox x:Name="cb_Theme" Width="100" SelectionChanged="cb_Theme_SelectionChanged" DisplayMemberPath="DisplayName"/>
+                    </ToolBar>
+                    <ToolBar VerticalAlignment="Center" VerticalContentAlignment="Center">
+                        <TextBox Width="100"/>
+                    </ToolBar>
+                </ToolBarTray>
 
-            <ListBox x:Name="listbox" Grid.Row="1" Grid.Column="0">
-                <ListBoxItem>Item 1</ListBoxItem>
-                <ListBoxItem>Item 2</ListBoxItem>
-                <ListBoxItem>Item 3</ListBoxItem>
-                <ListBoxItem>Item 4</ListBoxItem>
-                <ListBoxItem>Item 5</ListBoxItem>
-            </ListBox>
-
-            <TreeView x:Name="treeview" Grid.Row="1" Grid.Column="1">
-                <TreeViewItem Header="Item 1">
-                    <TreeViewItem Header="Item 1.1"/>
-                    <TreeViewItem Header="Item 1.2"/>
-                    <TreeViewItem Header="Item 1.3"/>
-                </TreeViewItem>
-                <TreeViewItem Header="Item 2">
-                    <TreeViewItem Header="Item 2.1"/>
-                    <TreeViewItem Header="Item 2.2"/>
-                    <TreeViewItem Header="Item 2.3"/>
-                </TreeViewItem>
-                <TreeViewItem Header="Item 3">
-                    <TreeViewItem Header="Item 3.1"/>
-                    <TreeViewItem Header="Item 3.2"/>
-                    <TreeViewItem Header="Item 3.3"/>
-                </TreeViewItem>
-            </TreeView>
-
-            <StackPanel Grid.Row="2" Orientation="Vertical" Height="Auto">
-                <StackPanel Orientation="Horizontal" Height="24" Margin="5" VerticalAlignment="Center">
-                    <Button Content="Button Normal" Margin="5,0,5,0" VerticalAlignment="Center"/>
-                    <Button Content="Button Disabled" IsEnabled="False" Margin="5,0,5,0" VerticalAlignment="Center"/>
-                    <ToggleButton Content="ToggleButton" Margin="5,0,5,0" VerticalAlignment="Center"/>
-                    <CheckBox Content="CheckBox" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <StackPanel.Resources>
+                        <Style TargetType="themer:ThemeSymbol">
+                            <Setter Property="Width" Value="18"/>
+                            <Setter Property="Height" Value="18"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <themer:ThemeSymbol SymbolName="folder"/>
+                    <themer:ThemeSymbol SymbolName="add"/>
+                    <themer:ThemeSymbol SymbolName="contact"/>
+                    <themer:ThemeSymbol SymbolName="email"/>
+                    <themer:ThemeSymbol SymbolName="explore"/>
+                    <themer:ThemeSymbol SymbolName="find"/>
+                    <themer:ThemeSymbol SymbolName="delete"/>
                 </StackPanel>
-                <StackPanel x:Name="radiopanel" Orientation="Horizontal" Height="24" Margin="5" VerticalAlignment="Center">
-                    <RadioButton x:Name="Radio0" Content="Radio0" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
-                    <RadioButton x:Name="Radio1" Content="Radio1" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
-                    <RadioButton x:Name="Radio2" Content="Radio2" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
-                    <RadioButton x:Name="Radio3" Content="Radio3" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Height="24" Margin="5" VerticalAlignment="Center">
-                    <ComboBox Width="100" Margin="5,0,5,0" VerticalAlignment="Center">
-                        <ComboBoxItem Content="Item 0"/>
-                        <ComboBoxItem Content="Item 1"/>
-                        <ComboBoxItem Content="Item 2"/>
-                        <ComboBox.SelectedIndex>0</ComboBox.SelectedIndex>
-                    </ComboBox>
-                    <TextBox Width="100" Margin="5,0,5,0" VerticalAlignment="Center"/>
-                </StackPanel>
-            </StackPanel>
 
-            <TextBox Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" AcceptsReturn="True"
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <DataGrid x:Name="datagrid" Grid.Row="0" Grid.Column="0" AutoGenerateColumns="True" ItemsSource="{Binding}">
+                        <DataGrid.Resources>
+                            <ContextMenu x:Key="cm_Zero">
+                                <ContextMenu.Items>
+                                    <MenuItem Header="Item 0"/>
+                                    <Separator/>
+                                    <MenuItem Header="Item 1">
+                                        <MenuItem Header="Subitem 0"/>
+                                        <MenuItem Header="Subitem 1"/>
+                                        <MenuItem Header="Subitem 2"/>
+                                    </MenuItem>
+                                    <MenuItem Header="Item 2">
+                                        <MenuItem Header="1"/>
+                                        <MenuItem Header="2"/>
+                                        <MenuItem Header="3"/>
+                                        <MenuItem Header="4"/>
+                                        <MenuItem Header="5"/>
+                                        <MenuItem Header="6"/>
+                                        <MenuItem Header="7"/>
+                                    </MenuItem>
+                                </ContextMenu.Items>
+                            </ContextMenu>
+                            <Style TargetType="DataGridRow" BasedOn="{StaticResource {x:Type DataGridRow}}">
+                                <Setter Property="ContextMenu" Value="{StaticResource cm_Zero}"/>
+                            </Style>
+                        </DataGrid.Resources>
+                    </DataGrid>
+
+                    <ListView x:Name="listview" Grid.Row="0" Grid.Column="1">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Column 1" DisplayMemberBinding="{Binding Path=Guid0}"/>
+                                <GridViewColumn Header="Column 2" DisplayMemberBinding="{Binding Path=Guid1}"/>
+                                <GridViewColumn Header="Column 2" DisplayMemberBinding="{Binding Path=Guid2}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+
+                    <ListBox x:Name="listbox" Grid.Row="1" Grid.Column="0">
+                        <ListBoxItem>Item 1</ListBoxItem>
+                        <ListBoxItem>Item 2</ListBoxItem>
+                        <ListBoxItem>Item 3</ListBoxItem>
+                        <ListBoxItem>Item 4</ListBoxItem>
+                        <ListBoxItem>Item 5</ListBoxItem>
+                    </ListBox>
+
+                    <TreeView x:Name="treeview" Grid.Row="1" Grid.Column="1">
+                        <TreeViewItem Header="Item 1">
+                            <TreeViewItem Header="Item 1.1"/>
+                            <TreeViewItem Header="Item 1.2"/>
+                            <TreeViewItem Header="Item 1.3"/>
+                        </TreeViewItem>
+                        <TreeViewItem Header="Item 2">
+                            <TreeViewItem Header="Item 2.1"/>
+                            <TreeViewItem Header="Item 2.2"/>
+                            <TreeViewItem Header="Item 2.3"/>
+                        </TreeViewItem>
+                        <TreeViewItem Header="Item 3">
+                            <TreeViewItem Header="Item 3.1"/>
+                            <TreeViewItem Header="Item 3.2"/>
+                            <TreeViewItem Header="Item 3.3"/>
+                        </TreeViewItem>
+                    </TreeView>
+
+                    <StackPanel Grid.Row="2" Orientation="Vertical" Height="Auto">
+                        <StackPanel Orientation="Horizontal" Height="24" Margin="5" VerticalAlignment="Center">
+                            <Button Content="Button Normal" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                            <Button Content="Button Disabled" IsEnabled="False" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                            <ToggleButton Content="ToggleButton" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                            <CheckBox Content="CheckBox" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel x:Name="radiopanel" Orientation="Horizontal" Height="24" Margin="5" VerticalAlignment="Center">
+                            <RadioButton x:Name="Radio0" Content="Radio0" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
+                            <RadioButton x:Name="Radio1" Content="Radio1" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
+                            <RadioButton x:Name="Radio2" Content="Radio2" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
+                            <RadioButton x:Name="Radio3" Content="Radio3" Margin="5,0,5,0" VerticalAlignment="Center" GroupName="rbgroup"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Height="24" Margin="5" VerticalAlignment="Center">
+                            <ComboBox Width="100" Margin="5,0,5,0" VerticalAlignment="Center">
+                                <ComboBoxItem Content="Item 0"/>
+                                <ComboBoxItem Content="Item 1"/>
+                                <ComboBoxItem Content="Item 2"/>
+                                <ComboBox.SelectedIndex>0</ComboBox.SelectedIndex>
+                            </ComboBox>
+                            <TextBox Width="100" Margin="5,0,5,0" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <TextBox Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" AcceptsReturn="True"
                      ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto"
                      Text="
                     This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
@@ -195,14 +219,18 @@
                     This is a TextBox with a great deal of text. This is a TextBox with a great deal of text.
                     This is a TextBox with a great deal of text.
                     "/>
-        </Grid>
+                </Grid>
 
-        <StatusBar Grid.Row="4">
-            <StatusBarItem>
-                <TextBlock Text="Status Item"/>
-            </StatusBarItem>
-        </StatusBar>
-        
-    </Grid>
-    
+                <StatusBar Grid.Row="4">
+                    <StatusBarItem>
+                        <TextBlock Text="Status Item"/>
+                    </StatusBarItem>
+                </StatusBar>
+
+            </Grid>
+            
+        </TabItem>
+
+    </TabControl>
+
 </Window>

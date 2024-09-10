@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\sbux.wpf.Controls\sbux.wpf.Controls.csproj" />
     <ProjectReference Include="..\Themer\sbux.wpf.Themer.csproj" />
     <ProjectReference Include="..\ViewManager\sbux.wpf.ViewManager.csproj" />
   </ItemGroup>

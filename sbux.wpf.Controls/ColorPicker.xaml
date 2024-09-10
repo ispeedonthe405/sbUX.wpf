@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="sbux.wpf.Controls.ColorPicker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:sbux.wpf.Controls"
+             xmlns:themer="clr-namespace:sbux.wpf.Themer;assembly=sbux.wpf.Themer"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             DataContext="{Binding RelativeSource={RelativeSource Self}}">
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+
+        <Style x:Key="ColorButtonStyle" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Background" Value="{Binding Path=SelectedColor}"/>
+            <Setter Property="BorderBrush" Value="{Binding Path=SelectedColor}"/>
+            <Setter Property="Foreground" Value="{Binding Path=SelectedColor}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border x:Name="border" 
+                    Background="{TemplateBinding Background}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" 
+                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                  Margin="{TemplateBinding Padding}" 
+                                  RecognizesAccessKey="True" 
+                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+    </UserControl.Resources>
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="TopLevelPanel" Height="18"/>
+            <RowDefinition x:Name="DetailsPanel" Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!--Top-level panel-->
+        <Grid Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0"
+                       HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,10,0"
+                       Text="{Binding Path=Text}"/>
+
+            <ToggleButton x:Name="tglDetails" Grid.Column="1" IsChecked="False">
+                <ToggleButton.Content>
+                    <Border Width="16" Height="16" Background="{Binding Path=SelectedColorBrush}"/>
+                </ToggleButton.Content>
+            </ToggleButton>
+
+        </Grid>
+        
+        <!--Details panel-->
+        <Grid Grid.Row="1"
+              Visibility="{Binding IsChecked, ElementName=tglDetails, Converter={StaticResource BooleanToVisibilityConverter}}">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="5"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!--Encompassing panel (not really a panel)-->
+            <Border Grid.Row="0" Grid.RowSpan="6" Grid.Column="0" Grid.ColumnSpan="3"
+                    Background="{DynamicResource ControlNormalBrushKey}"
+                    BorderBrush="{DynamicResource BorderNormalBrushKey}"
+                    BorderThickness="2"/>
+
+            <!--Upper panel part-->
+            <Border Grid.Row="0" Grid.Column="1" Margin="5"
+                    Background="{Binding Path=SelectedColorBrush}"/>
+
+            <Button x:Name="btnCloseDetails" 
+                    Grid.Row="0" Grid.Column="2" 
+                    VerticalAlignment="Top" HorizontalAlignment="Right"
+                    Width="16" Height="16" Margin="3"
+                    Click="btnCloseDetails_Click">
+                <Button.Content>
+                    <themer:ThemeSymbol SymbolName="close"/>
+                </Button.Content>
+            </Button>
+
+            <!--Lower panel part-->
+            
+            <!--Column 0-->
+            <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Red:"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Green:"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Blue:"/>
+
+            <!--Column 1-->
+            <TextBox x:Name="tbRed" Grid.Row="2" Grid.Column="1" Width="50" Text="{Binding Path=ColorR}" IsReadOnly="True"/>
+            <TextBox x:Name="tbGreen" Grid.Row="3" Grid.Column="1" Width="50" Text="{Binding Path=ColorG}" IsReadOnly="True"/>
+            <TextBox x:Name="tbBlue" Grid.Row="4" Grid.Column="1" Width="50" Text="{Binding Path=ColorB}" IsReadOnly="True"/>
+
+            <!--Column 2-->
+            <Slider x:Name="sldRed" Grid.Row="2" Grid.Column="2" Minimum="0" Maximum="255" Value="{Binding Path=ColorR}"/>
+            <Slider x:Name="sldGreen" Grid.Row="3" Grid.Column="2" Minimum="0" Maximum="255" Value="{Binding Path=ColorG}"/>
+            <Slider x:Name="sldBlue" Grid.Row="4" Grid.Column="2" Minimum="0" Maximum="255" Value="{Binding Path=ColorB}"/>
+
+
+        </Grid>
+        
+    </Grid>
+
+</UserControl>
