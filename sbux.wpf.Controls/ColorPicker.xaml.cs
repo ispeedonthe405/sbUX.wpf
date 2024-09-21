@@ -19,7 +19,7 @@ namespace sbux.wpf.Controls
 
         public static readonly DependencyProperty TextProperty =
             DependencyProperty.Register("Text", typeof(string), typeof(ColorPicker),
-                new PropertyMetadata("Color"));
+                new PropertyMetadata(string.Empty));
 
         public static readonly DependencyProperty SelectedColorProperty =
             DependencyProperty.Register("SelectedColor", typeof(Color), typeof(ColorPicker),
