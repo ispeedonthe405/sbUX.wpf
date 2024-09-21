@@ -1,5 +1,4 @@
 # sbUX.wpf
-.Net / WPF Library
 A collection of WPF libraries focusing on UX
 
 **Themer**
