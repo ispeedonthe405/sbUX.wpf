@@ -12,26 +12,6 @@
 
     <TabControl x:Name="MainTabs" TabStripPlacement="Top">
 
-        <TabItem Header="sbux.wpf.Controls">
-
-            <Grid>
-                
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-                <ctls:ColorPicker Grid.Row="0" Grid.Column="0" Text="Selected Color:"/>
-
-            </Grid>
-            
-        </TabItem>
-        
         <TabItem Header="sbux.wpf.Themer">
             <Grid>
 
@@ -229,6 +209,26 @@
 
             </Grid>
             
+        </TabItem>
+
+        <TabItem Header="sbux.wpf.Controls">
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <ctls:ColorPicker Grid.Row="0" Grid.Column="0" Text="Color Picker:"/>
+
+            </Grid>
+
         </TabItem>
 
     </TabControl>
