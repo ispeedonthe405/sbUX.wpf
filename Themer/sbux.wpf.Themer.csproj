@@ -15,6 +15,7 @@
     <None Remove="Symbols\111111\add.png" />
     <None Remove="Symbols\111111\add_attachment.png" />
     <None Remove="Symbols\111111\add_image.png" />
+    <None Remove="Symbols\111111\alarm.png" />
     <None Remove="Symbols\111111\arrow_back.png" />
     <None Remove="Symbols\111111\arrow_drop_down.png" />
     <None Remove="Symbols\111111\arrow_forward.png" />
@@ -36,11 +37,17 @@
     <None Remove="Symbols\111111\content_cut.png" />
     <None Remove="Symbols\111111\content_paste.png" />
     <None Remove="Symbols\111111\delete.png" />
+    <None Remove="Symbols\111111\double_arrow_down.png" />
+    <None Remove="Symbols\111111\double_arrow_left.png" />
+    <None Remove="Symbols\111111\double_arrow_right.png" />
+    <None Remove="Symbols\111111\double_arrow_up.png" />
     <None Remove="Symbols\111111\draft.png" />
     <None Remove="Symbols\111111\drafts.png" />
     <None Remove="Symbols\111111\edit.png" />
     <None Remove="Symbols\111111\edit2.png" />
     <None Remove="Symbols\111111\email.png" />
+    <None Remove="Symbols\111111\encrypted.png" />
+    <None Remove="Symbols\111111\encrypted_add.png" />
     <None Remove="Symbols\111111\expand_circle.png" />
     <None Remove="Symbols\111111\explore.png" />
     <None Remove="Symbols\111111\favorite.png" />
@@ -59,19 +66,31 @@
     <None Remove="Symbols\111111\home.png" />
     <None Remove="Symbols\111111\image.png" />
     <None Remove="Symbols\111111\inbox.png" />
+    <None Remove="Symbols\111111\key.png" />
+    <None Remove="Symbols\111111\key_off.png" />
+    <None Remove="Symbols\111111\key_vertical.png" />
     <None Remove="Symbols\111111\language.png" />
     <None Remove="Symbols\111111\library_add.png" />
     <None Remove="Symbols\111111\link.png" />
+    <None Remove="Symbols\111111\lock.png" />
+    <None Remove="Symbols\111111\lock_open.png" />
     <None Remove="Symbols\111111\login.png" />
     <None Remove="Symbols\111111\mail.png" />
     <None Remove="Symbols\111111\mark_as_unread2.png" />
     <None Remove="Symbols\111111\mark_email_unread.png" />
     <None Remove="Symbols\111111\menu.png" />
     <None Remove="Symbols\111111\menu_book.png" />
+    <None Remove="Symbols\111111\mic.png" />
+    <None Remove="Symbols\111111\mic_off.png" />
     <None Remove="Symbols\111111\minimize.png" />
     <None Remove="Symbols\111111\more_horiz.png" />
     <None Remove="Symbols\111111\more_vert.png" />
+    <None Remove="Symbols\111111\music_note.png" />
+    <None Remove="Symbols\111111\music_off.png" />
     <None Remove="Symbols\111111\outbox.png" />
+    <None Remove="Symbols\111111\passkey.png" />
+    <None Remove="Symbols\111111\password.png" />
+    <None Remove="Symbols\111111\password_2.png" />
     <None Remove="Symbols\111111\person.png" />
     <None Remove="Symbols\111111\person_add.png" />
     <None Remove="Symbols\111111\question_mark.png" />
@@ -120,11 +139,17 @@
     <None Remove="Symbols\242424\content_cut.png" />
     <None Remove="Symbols\242424\content_paste.png" />
     <None Remove="Symbols\242424\delete.png" />
+    <None Remove="Symbols\242424\double_arrow_down.png" />
+    <None Remove="Symbols\242424\double_arrow_left.png" />
+    <None Remove="Symbols\242424\double_arrow_right.png" />
+    <None Remove="Symbols\242424\double_arrow_up.png" />
     <None Remove="Symbols\242424\draft.png" />
     <None Remove="Symbols\242424\drafts.png" />
     <None Remove="Symbols\242424\edit.png" />
     <None Remove="Symbols\242424\edit2.png" />
     <None Remove="Symbols\242424\email.png" />
+    <None Remove="Symbols\242424\encrypted.png" />
+    <None Remove="Symbols\242424\encrypted_add.png" />
     <None Remove="Symbols\242424\expand_circle.png" />
     <None Remove="Symbols\242424\explore.png" />
     <None Remove="Symbols\242424\favorite.png" />
@@ -143,19 +168,31 @@
     <None Remove="Symbols\242424\home.png" />
     <None Remove="Symbols\242424\image.png" />
     <None Remove="Symbols\242424\inbox.png" />
+    <None Remove="Symbols\242424\key.png" />
+    <None Remove="Symbols\242424\key_off.png" />
+    <None Remove="Symbols\242424\key_vertical.png" />
     <None Remove="Symbols\242424\language.png" />
     <None Remove="Symbols\242424\library_add.png" />
     <None Remove="Symbols\242424\link.png" />
+    <None Remove="Symbols\242424\lock.png" />
+    <None Remove="Symbols\242424\lock_open.png" />
     <None Remove="Symbols\242424\login.png" />
     <None Remove="Symbols\242424\mail.png" />
     <None Remove="Symbols\242424\mark_as_unread2.png" />
     <None Remove="Symbols\242424\mark_email_unread.png" />
     <None Remove="Symbols\242424\menu.png" />
     <None Remove="Symbols\242424\menu_book.png" />
+    <None Remove="Symbols\242424\mic.png" />
+    <None Remove="Symbols\242424\mic_off.png" />
     <None Remove="Symbols\242424\minimize.png" />
     <None Remove="Symbols\242424\more_horiz.png" />
     <None Remove="Symbols\242424\more_vert.png" />
+    <None Remove="Symbols\242424\music_note.png" />
+    <None Remove="Symbols\242424\music_off.png" />
     <None Remove="Symbols\242424\outbox.png" />
+    <None Remove="Symbols\242424\passkey.png" />
+    <None Remove="Symbols\242424\password.png" />
+    <None Remove="Symbols\242424\password_2.png" />
     <None Remove="Symbols\242424\person.png" />
     <None Remove="Symbols\242424\person_add.png" />
     <None Remove="Symbols\242424\question_mark.png" />
@@ -204,11 +241,17 @@
     <None Remove="Symbols\434343\content_cut.png" />
     <None Remove="Symbols\434343\content_paste.png" />
     <None Remove="Symbols\434343\delete.png" />
+    <None Remove="Symbols\434343\double_arrow_down.png" />
+    <None Remove="Symbols\434343\double_arrow_left.png" />
+    <None Remove="Symbols\434343\double_arrow_right.png" />
+    <None Remove="Symbols\434343\double_arrow_up.png" />
     <None Remove="Symbols\434343\draft.png" />
     <None Remove="Symbols\434343\drafts.png" />
     <None Remove="Symbols\434343\edit.png" />
     <None Remove="Symbols\434343\edit2.png" />
     <None Remove="Symbols\434343\email.png" />
+    <None Remove="Symbols\434343\encrypted.png" />
+    <None Remove="Symbols\434343\encrypted_add.png" />
     <None Remove="Symbols\434343\expand_circle.png" />
     <None Remove="Symbols\434343\explore.png" />
     <None Remove="Symbols\434343\favorite.png" />
@@ -227,19 +270,31 @@
     <None Remove="Symbols\434343\home.png" />
     <None Remove="Symbols\434343\image.png" />
     <None Remove="Symbols\434343\inbox.png" />
+    <None Remove="Symbols\434343\key.png" />
+    <None Remove="Symbols\434343\key_off.png" />
+    <None Remove="Symbols\434343\key_vertical.png" />
     <None Remove="Symbols\434343\language.png" />
     <None Remove="Symbols\434343\library_add.png" />
     <None Remove="Symbols\434343\link.png" />
+    <None Remove="Symbols\434343\lock.png" />
+    <None Remove="Symbols\434343\lock_open.png" />
     <None Remove="Symbols\434343\login.png" />
     <None Remove="Symbols\434343\mail.png" />
     <None Remove="Symbols\434343\mark_as_unread2.png" />
     <None Remove="Symbols\434343\mark_email_unread.png" />
     <None Remove="Symbols\434343\menu.png" />
     <None Remove="Symbols\434343\menu_book.png" />
+    <None Remove="Symbols\434343\mic.png" />
+    <None Remove="Symbols\434343\mic_off.png" />
     <None Remove="Symbols\434343\minimize.png" />
     <None Remove="Symbols\434343\more_horiz.png" />
     <None Remove="Symbols\434343\more_vert.png" />
+    <None Remove="Symbols\434343\music_note.png" />
+    <None Remove="Symbols\434343\music_off.png" />
     <None Remove="Symbols\434343\outbox.png" />
+    <None Remove="Symbols\434343\passkey.png" />
+    <None Remove="Symbols\434343\password.png" />
+    <None Remove="Symbols\434343\password_2.png" />
     <None Remove="Symbols\434343\person.png" />
     <None Remove="Symbols\434343\person_add.png" />
     <None Remove="Symbols\434343\question_mark.png" />
@@ -288,11 +343,17 @@
     <None Remove="Symbols\C0C0C0\content_cut.png" />
     <None Remove="Symbols\C0C0C0\content_paste.png" />
     <None Remove="Symbols\C0C0C0\delete.png" />
+    <None Remove="Symbols\C0C0C0\double_arrow_down.png" />
+    <None Remove="Symbols\C0C0C0\double_arrow_left.png" />
+    <None Remove="Symbols\C0C0C0\double_arrow_right.png" />
+    <None Remove="Symbols\C0C0C0\double_arrow_up.png" />
     <None Remove="Symbols\C0C0C0\draft.png" />
     <None Remove="Symbols\C0C0C0\drafts.png" />
     <None Remove="Symbols\C0C0C0\edit.png" />
     <None Remove="Symbols\C0C0C0\edit2.png" />
     <None Remove="Symbols\C0C0C0\email.png" />
+    <None Remove="Symbols\C0C0C0\encrypted.png" />
+    <None Remove="Symbols\C0C0C0\encrypted_add.png" />
     <None Remove="Symbols\C0C0C0\expand_circle.png" />
     <None Remove="Symbols\C0C0C0\explore.png" />
     <None Remove="Symbols\C0C0C0\favorite.png" />
@@ -311,19 +372,31 @@
     <None Remove="Symbols\C0C0C0\home.png" />
     <None Remove="Symbols\C0C0C0\image.png" />
     <None Remove="Symbols\C0C0C0\inbox.png" />
+    <None Remove="Symbols\C0C0C0\key.png" />
+    <None Remove="Symbols\C0C0C0\key_off.png" />
+    <None Remove="Symbols\C0C0C0\key_vertical.png" />
     <None Remove="Symbols\C0C0C0\language.png" />
     <None Remove="Symbols\C0C0C0\library_add.png" />
     <None Remove="Symbols\C0C0C0\link.png" />
+    <None Remove="Symbols\C0C0C0\lock.png" />
+    <None Remove="Symbols\C0C0C0\lock_open.png" />
     <None Remove="Symbols\C0C0C0\login.png" />
     <None Remove="Symbols\C0C0C0\mail.png" />
     <None Remove="Symbols\C0C0C0\mark_as_unread2.png" />
     <None Remove="Symbols\C0C0C0\mark_email_unread.png" />
     <None Remove="Symbols\C0C0C0\menu.png" />
     <None Remove="Symbols\C0C0C0\menu_book.png" />
+    <None Remove="Symbols\C0C0C0\mic.png" />
+    <None Remove="Symbols\C0C0C0\mic_off.png" />
     <None Remove="Symbols\C0C0C0\minimize.png" />
     <None Remove="Symbols\C0C0C0\more_horiz.png" />
     <None Remove="Symbols\C0C0C0\more_vert.png" />
+    <None Remove="Symbols\C0C0C0\music_note.png" />
+    <None Remove="Symbols\C0C0C0\music_off.png" />
     <None Remove="Symbols\C0C0C0\outbox.png" />
+    <None Remove="Symbols\C0C0C0\passkey.png" />
+    <None Remove="Symbols\C0C0C0\password.png" />
+    <None Remove="Symbols\C0C0C0\password_2.png" />
     <None Remove="Symbols\C0C0C0\person.png" />
     <None Remove="Symbols\C0C0C0\person_add.png" />
     <None Remove="Symbols\C0C0C0\question_mark.png" />
@@ -372,11 +445,17 @@
     <None Remove="Symbols\EFEFEF\content_cut.png" />
     <None Remove="Symbols\EFEFEF\content_paste.png" />
     <None Remove="Symbols\EFEFEF\delete.png" />
+    <None Remove="Symbols\EFEFEF\double_arrow_down.png" />
+    <None Remove="Symbols\EFEFEF\double_arrow_left.png" />
+    <None Remove="Symbols\EFEFEF\double_arrow_right.png" />
+    <None Remove="Symbols\EFEFEF\double_arrow_up.png" />
     <None Remove="Symbols\EFEFEF\draft.png" />
     <None Remove="Symbols\EFEFEF\drafts.png" />
     <None Remove="Symbols\EFEFEF\edit.png" />
     <None Remove="Symbols\EFEFEF\edit2.png" />
     <None Remove="Symbols\EFEFEF\email.png" />
+    <None Remove="Symbols\EFEFEF\encrypted.png" />
+    <None Remove="Symbols\EFEFEF\encrypted_add.png" />
     <None Remove="Symbols\EFEFEF\expand_circle.png" />
     <None Remove="Symbols\EFEFEF\explore.png" />
     <None Remove="Symbols\EFEFEF\favorite.png" />
@@ -395,19 +474,31 @@
     <None Remove="Symbols\EFEFEF\home.png" />
     <None Remove="Symbols\EFEFEF\image.png" />
     <None Remove="Symbols\EFEFEF\inbox.png" />
+    <None Remove="Symbols\EFEFEF\key.png" />
+    <None Remove="Symbols\EFEFEF\key_off.png" />
+    <None Remove="Symbols\EFEFEF\key_vertical.png" />
     <None Remove="Symbols\EFEFEF\language.png" />
     <None Remove="Symbols\EFEFEF\library_add.png" />
     <None Remove="Symbols\EFEFEF\link.png" />
+    <None Remove="Symbols\EFEFEF\lock.png" />
+    <None Remove="Symbols\EFEFEF\lock_open.png" />
     <None Remove="Symbols\EFEFEF\login.png" />
     <None Remove="Symbols\EFEFEF\mail.png" />
     <None Remove="Symbols\EFEFEF\mark_as_unread2.png" />
     <None Remove="Symbols\EFEFEF\mark_email_unread.png" />
     <None Remove="Symbols\EFEFEF\menu.png" />
     <None Remove="Symbols\EFEFEF\menu_book.png" />
+    <None Remove="Symbols\EFEFEF\mic.png" />
+    <None Remove="Symbols\EFEFEF\mic_off.png" />
     <None Remove="Symbols\EFEFEF\minimize.png" />
     <None Remove="Symbols\EFEFEF\more_horiz.png" />
     <None Remove="Symbols\EFEFEF\more_vert.png" />
+    <None Remove="Symbols\EFEFEF\music_note.png" />
+    <None Remove="Symbols\EFEFEF\music_off.png" />
     <None Remove="Symbols\EFEFEF\outbox.png" />
+    <None Remove="Symbols\EFEFEF\passkey.png" />
+    <None Remove="Symbols\EFEFEF\password.png" />
+    <None Remove="Symbols\EFEFEF\password_2.png" />
     <None Remove="Symbols\EFEFEF\person.png" />
     <None Remove="Symbols\EFEFEF\person_add.png" />
     <None Remove="Symbols\EFEFEF\question_mark.png" />
@@ -442,6 +533,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\111111\add_image.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\alarm.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\111111\arrow_back.png">
@@ -507,6 +601,18 @@
     <Resource Include="Symbols\111111\delete.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\111111\double_arrow_down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\double_arrow_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\double_arrow_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\double_arrow_up.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\111111\draft.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -520,6 +626,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\111111\email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\encrypted.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\encrypted_add.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\111111\expand_circle.png">
@@ -576,6 +688,15 @@
     <Resource Include="Symbols\111111\inbox.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\111111\key.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\key_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\key_vertical.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\111111\language.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -583,6 +704,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\111111\link.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\lock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\lock_open.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\111111\login.png">
@@ -603,6 +730,12 @@
     <Resource Include="Symbols\111111\menu_book.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\111111\mic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\mic_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\111111\minimize.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -612,7 +745,22 @@
     <Resource Include="Symbols\111111\more_vert.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\111111\music_note.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\music_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\111111\outbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\passkey.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\password.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\111111\password_2.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\111111\person.png">
@@ -759,6 +907,18 @@
     <Resource Include="Symbols\242424\delete.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\242424\double_arrow_down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\double_arrow_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\double_arrow_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\double_arrow_up.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\242424\draft.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -772,6 +932,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\242424\email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\encrypted.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\encrypted_add.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\242424\expand_circle.png">
@@ -828,6 +994,15 @@
     <Resource Include="Symbols\242424\inbox.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\242424\key.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\key_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\key_vertical.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\242424\language.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -835,6 +1010,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\242424\link.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\lock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\lock_open.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\242424\login.png">
@@ -855,6 +1036,12 @@
     <Resource Include="Symbols\242424\menu_book.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\242424\mic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\mic_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\242424\minimize.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -864,7 +1051,22 @@
     <Resource Include="Symbols\242424\more_vert.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\242424\music_note.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\music_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\242424\outbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\passkey.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\password.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\242424\password_2.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\242424\person.png">
@@ -1011,6 +1213,18 @@
     <Resource Include="Symbols\434343\delete.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\434343\double_arrow_down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\double_arrow_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\double_arrow_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\double_arrow_up.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\434343\draft.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -1024,6 +1238,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\434343\email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\encrypted.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\encrypted_add.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\434343\expand_circle.png">
@@ -1080,6 +1300,15 @@
     <Resource Include="Symbols\434343\inbox.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\434343\key.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\key_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\key_vertical.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\434343\language.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -1087,6 +1316,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\434343\link.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\lock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\lock_open.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\434343\login.png">
@@ -1107,6 +1342,12 @@
     <Resource Include="Symbols\434343\menu_book.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\434343\mic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\mic_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\434343\minimize.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -1116,7 +1357,22 @@
     <Resource Include="Symbols\434343\more_vert.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\434343\music_note.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\music_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\434343\outbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\passkey.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\password.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\434343\password_2.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\434343\person.png">
@@ -1263,6 +1519,18 @@
     <Resource Include="Symbols\C0C0C0\delete.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\C0C0C0\double_arrow_down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\double_arrow_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\double_arrow_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\double_arrow_up.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\C0C0C0\draft.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -1276,6 +1544,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\C0C0C0\email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\encrypted.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\encrypted_add.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\C0C0C0\expand_circle.png">
@@ -1332,6 +1606,15 @@
     <Resource Include="Symbols\C0C0C0\inbox.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\C0C0C0\key.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\key_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\key_vertical.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\C0C0C0\language.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -1339,6 +1622,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\C0C0C0\link.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\lock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\lock_open.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\C0C0C0\login.png">
@@ -1359,6 +1648,12 @@
     <Resource Include="Symbols\C0C0C0\menu_book.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\C0C0C0\mic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\mic_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\C0C0C0\minimize.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -1368,7 +1663,22 @@
     <Resource Include="Symbols\C0C0C0\more_vert.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\C0C0C0\music_note.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\music_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\C0C0C0\outbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\passkey.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\password.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\C0C0C0\password_2.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\C0C0C0\person.png">
@@ -1515,6 +1825,18 @@
     <Resource Include="Symbols\EFEFEF\delete.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\EFEFEF\double_arrow_down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\double_arrow_left.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\double_arrow_right.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\double_arrow_up.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\EFEFEF\draft.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -1528,6 +1850,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\EFEFEF\email.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\encrypted.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\encrypted_add.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\EFEFEF\expand_circle.png">
@@ -1584,6 +1912,15 @@
     <Resource Include="Symbols\EFEFEF\inbox.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\EFEFEF\key.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\key_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\key_vertical.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\EFEFEF\language.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -1591,6 +1928,12 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\EFEFEF\link.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\lock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\lock_open.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\EFEFEF\login.png">
@@ -1611,6 +1954,12 @@
     <Resource Include="Symbols\EFEFEF\menu_book.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\EFEFEF\mic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\mic_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\EFEFEF\minimize.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -1620,7 +1969,22 @@
     <Resource Include="Symbols\EFEFEF\more_vert.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Symbols\EFEFEF\music_note.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\music_off.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Symbols\EFEFEF\outbox.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\passkey.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\password.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Symbols\EFEFEF\password_2.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Symbols\EFEFEF\person.png">

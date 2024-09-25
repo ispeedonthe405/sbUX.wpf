@@ -69,9 +69,19 @@ namespace sbux.wpf.Themer
             list.Add(new("delete", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/delete.png")));
             list.Add(new("draft", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/draft.png")));
             list.Add(new("drafts", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/drafts.png")));
+
+            list.Add(new("double_arrow_down", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/double_arrow_down.png")));
+            list.Add(new("double_arrow_left", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/double_arrow_left.png")));
+            list.Add(new("double_arrow_right", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/double_arrow_right.png")));
+            list.Add(new("double_arrow_up", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/double_arrow_up.png")));
+
             list.Add(new("edit", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/edit.png")));
             list.Add(new("edit2", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/edit2.png")));
             list.Add(new("email", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/email.png")));
+
+            list.Add(new("encrypted", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/encrypted.png")));
+            list.Add(new("encrypted_add", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/encrypted_add.png")));
+
             list.Add(new("expand_circle", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/expand_circle.png")));
             list.Add(new("explore", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/explore.png")));
             list.Add(new("favorite", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/favorite.png")));
@@ -90,19 +100,43 @@ namespace sbux.wpf.Themer
             list.Add(new("home", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/home.png")));
             list.Add(new("image", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/image.png")));
             list.Add(new("inbox", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/inbox.png")));
+
+            list.Add(new("key", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/key.png")));
+            list.Add(new("key_off", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/key_off.png")));
+            list.Add(new("key_vertical", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/key_vertical.png")));
+
+
             list.Add(new("language", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/language.png")));
             list.Add(new("library_add", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/library_add.png")));
             list.Add(new("link", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/link.png")));
+
+            list.Add(new("lock", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/lock.png")));
+            list.Add(new("lock_open", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/lock_open.png")));
+
             list.Add(new("login", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/login.png")));
             list.Add(new("mail", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/mail.png")));
             list.Add(new("mark_as_unread2", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/mark_as_unread2.png")));
             list.Add(new("mark_email_unread", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/mark_email_unread.png")));
             list.Add(new("menu", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/menu.png")));
             list.Add(new("menu_book", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/menu_book.png")));
+
+            list.Add(new("mic", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/mic.png")));
+            list.Add(new("mic_off", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/mic_off.png")));
+
             list.Add(new("minimize", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/minimize.png")));
             list.Add(new("more_horiz", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/more_horiz.png")));
             list.Add(new("more_vert", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/more_vert.png")));
+
+            list.Add(new("music_note", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/music_note.png")));
+            list.Add(new("music_off", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/music_off.png")));
+
+
             list.Add(new("outbox", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/outbox.png")));
+
+            list.Add(new("passkey", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/passkey.png")));
+            list.Add(new("password", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/password.png")));
+            list.Add(new("password_2", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/password_2.png")));
+
             list.Add(new("person", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/person.png")));
             list.Add(new("person_add", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/person_add.png")));
             list.Add(new("question_mark", color, new($"pack://application:,,,/sbux.wpf.Themer;component/Symbols/{colorName}/question_mark.png")));
